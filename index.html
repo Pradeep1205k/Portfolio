@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/87f4045376.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav> 
+            <img src="Images/plogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span>PRADEEP</span> <br> From Kalladka</h1>
+        </div>
+    </div>
+</div>
+
+<!------about------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a computer science engineering student, and I'm really into all things tech. I've got a solid grasp of programming languages like C, Python, Java, and JavaScript. In my classes, I've covered stuff like data structures, algorithms, and how to build software. Plus, I've dabbled in web development and managing databases.
+
+                    I'm not just into this stuff for school though. I'm always on the lookout for the latest tech trends and trying to learn new things. I'm itching to put my skills to work in a real-world job and take on challenges that'll help me grow as an engineer.
+                    
+                    Cheers!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li> <span>Web development</span><br>Web App development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li> <span>2022 - 2023</span><br>Intership at QSpiders Banglore for MongoDb database mangement system</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>2025</span><br>BE- Computer Science</li>
+                            <li> <span>2021</span><br>Pre University - PCMB</li>
+                            <li> <span>2019</span><br>SSLC</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!------services------->
+<div id="services">
+    <div class="container"> 
+        <h1 class="sub-title">My Serivces</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2> UI/UX Design</h2>
+                <p>“Design isn't just what it looks like and feels like — design is how it works.” </p>
+                <a href="#"> Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Design</h2>
+                <p>“SEO is an investment just like a tree that needs effort, 
+                    patience and time to grow before you can see the result.” </p>
+                <a href="#"> Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!---------------Portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p> this app is used so much in the world bcz it is super amazing thing ever seen</p>
+                    <a href="https://www.google.com/search?q=info+sovial+media+app&sca_esv=1bd60cbf982580d2&sxsrf=ACQVn09xyS_caXKoHPrbZydhAemwXS2emw%3A1707844859685&ei=-6TLZYC2KYjkseMPyc23uAI&ved=0ahUKEwjAn8Xx6aiEAxUIcmwGHcnmDScQ4dUDCBA&uact=5&oq=info+sovial+media+app&gs_lp=Egxnd3Mtd2l6LXNlcnAiFWluZm8gc292aWFsIG1lZGlhIGFwcDIIEAAYCBgeGA0yCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSIUcUABYvRFwAHgBkAEAmAGAAaAB1gSqAQMwLjW4AQPIAQD4AQHCAgcQIxiwAhgnwgIKEAAYgAQYDRixA8ICBxAAGIAEGA3CAgYQABgeGA3iAwQYACBB&sclient=gws-wiz-serp"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p> this app is used so much in the world bcz it is super amazing </p>
+                    <a href="https://www.google.com/search?q=info+sovial+media++music++app&sca_esv=1bd60cbf982580d2&sxsrf=ACQVn08iYFihLRejXx25ohXIM5vvF_Z8bQ%3A1707844876572&ei=DKXLZaHCIqOQseMPguuT-A4&ved=0ahUKEwih-Mv56aiEAxUjSGwGHYL1BO8Q4dUDCBA&uact=5&oq=info+sovial+media++music++app&gs_lp=Egxnd3Mtd2l6LXNlcnAiHWluZm8gc292aWFsIG1lZGlhICBtdXNpYyAgYXBwMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESIo4UMMHWLgncAJ4AZABAJgBkQGgAcMKqgEEMS4xMLgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgQQIxgnwgIIEAAYCBgeGA3CAgsQABiABBiKBRiGA8ICDBAhGAoYoAEYwwQYCsICBhAhGAoYCsICBxAjGLACGCfiAwQYACBBiAYBkAYI&sclient=gws-wiz-serp"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p> this app is used so much in the world bcz it is super amazing thing ever seen</p>
+                    <a href="https://www.google.com/search?q=info+sovial+media+online+shopping+app&sca_esv=1bd60cbf982580d2&sxsrf=ACQVn0_w7DqECjvH7PsVaoILaqd1ke8a7A%3A1707844939470&ei=S6XLZYygHM6iseMP4_mm4AM&ved=0ahUKEwjM8cqX6qiEAxVOUWwGHeO8CTwQ4dUDCBA&uact=5&oq=info+sovial+media+online+shopping+app&gs_lp=Egxnd3Mtd2l6LXNlcnAiJWluZm8gc292aWFsIG1lZGlhIG9ubGluZSBzaG9wcGluZyBhcHAyCRAhGAoYoAEYCjIJECEYChigARgKMgkQIRgKGKABGApIpTNQoAlY9ixwAXgBkAEAmAGUAaAByhKqAQQwLjE5uAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICCBAAGAgYHhgNwgIKEAAYCBgeGA0YCsICCxAAGIAEGIoFGIYDwgIGEAAYFhgewgIIEAAYFhgeGA_CAgYQIRgKGAriAwQYACBBiAYBkAYI&sclient=gws-wiz-serp"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+
+<!------------------Contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> pradeep1205k@gmail.com</p>
+                <p> <i class="fa-solid fa-phone-volume"></i> 9110465687</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/pra_deep_prabhu?igsh=MXVmNjU4bGR4ZGZ4ZQ=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/pradeep.prabhu.148116/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/pradeep-prabhu-ab59b1232/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Pradeep1205k"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="Images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Pradeep_2023. All rights are preserved </p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxaUxVn59ocVCOmoaYw7hSKVvBJTF7BgQcvUY9uwn1FgV5ERPgPijsX5Z40iM9MlSL4OQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
